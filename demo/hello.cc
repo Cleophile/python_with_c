@@ -15,5 +15,5 @@ char const* greet() {
 
 BOOST_PYTHON_MODULE(hello) {
     using namespace boost::python;
-    def("greet", greet)
+    def("greet", greet);
 }
