@@ -13,7 +13,8 @@ char const* greet() {
 #include <boost/python.hpp>
 #include <boost/python/numpy.hpp>
 
+using boost::python::def;
+
 BOOST_PYTHON_MODULE(hello) {
-    using namespace boost::python;
     def("greet", greet);
 }
