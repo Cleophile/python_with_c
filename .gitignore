@@ -1,0 +1,7 @@
+.ccls
+.clang-format
+references
+build/
+compile_commands.json
+*.swp
+tags
