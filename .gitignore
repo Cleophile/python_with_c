@@ -1,7 +1,8 @@
 .ccls
 .clang-format
 references
-build/
+**/build
+**/__pycache__
 compile_commands.json
 *.swp
 tags
