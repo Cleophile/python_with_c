@@ -25,8 +25,8 @@ FIND_PACKAGE(PythonLibs 3.8 REQUIRED)
 MESSAGE("LOG: python_include_dirs " ${PYTHON_INCLUDE_DIRS})
 MESSAGE("LOG: Python libraries " ${PYTHON_LIBRARIES})
 
-FIND_PACKAGE(Boost COMPONENTS python REQUIRED)
-MESSAGE("LOG: Boost libraries" ${Boost_LIBRARIES})
+FIND_PACKAGE(Boost COMPONENTS python numpy REQUIRED)
+MESSAGE("LOG: Boost libraries " ${Boost_LIBRARIES})
 
 ADD_LIBRARY(${PROJ_NAME} MODULE hello.cc)
 
